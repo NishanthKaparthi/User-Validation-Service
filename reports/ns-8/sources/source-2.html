@@ -1,0 +1,129 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > ValidationConstants</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/highlight-idea.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">com.ibm.user_validation_service.util</a>
+</div>
+
+<h1>Coverage Summary for Class: ValidationConstants (com.ibm.user_validation_service.util)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ValidationConstants</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<div class="sourceCode" id="sourceCode"><i class="no-highlight">1</i>&nbsp;package com.ibm.user_validation_service.util;
+<i class="no-highlight">2</i>&nbsp;
+<i class="no-highlight">3</i>&nbsp;/**
+<i class="no-highlight">4</i>&nbsp; * ValidationConstants class holds all the constants used within the application.
+<i class="no-highlight">5</i>&nbsp; */
+<b class="nc"><i class="no-highlight">6</i>&nbsp;public class ValidationConstants {</b>
+<i class="no-highlight">7</i>&nbsp;    public static final String NULL_API_RESPONSE = &quot;Received null response from api&quot;;
+<i class="no-highlight">8</i>&nbsp;    public static final String NOT_ELIGIBLE_TO_REGISTER = &quot;You are not eligible to register as you are not from Canada (or) input IP might not be appropriate&quot;;
+<i class="no-highlight">9</i>&nbsp;    public static final String INVALID_PASSWORD = &quot;Password validation failed, it should be greater than 8 characters and&quot; +
+<i class="no-highlight">10</i>&nbsp;            &quot; should contain a number, a capital letter and a special character in \&quot;_ # $ % .\&quot; &quot;;
+<i class="no-highlight">11</i>&nbsp;    public static final String BLANK_PARAMS = &quot;Parameters should not be blank/null, please input username, password and IP address&quot;;
+<i class="no-highlight">12</i>&nbsp;    public static final String INCOMING_REQUEST = &quot;Incoming user request: {}&quot;;
+<i class="no-highlight">13</i>&nbsp;    public static final String OUTGOING_RESPONSE = &quot;Outgoing user response: {}&quot;;
+<i class="no-highlight">14</i>&nbsp;    public static final String NON_BLANK_PARAMS = &quot;All the parameters are non null/non-blank&quot;;
+<i class="no-highlight">15</i>&nbsp;    public static final String VALID_PASSWORD = &quot;Input password meets the standard&quot;;
+<i class="no-highlight">16</i>&nbsp;    public static final String MAKE_API_CALL = &quot;Making api call using URL: {}&quot;;
+<i class="no-highlight">17</i>&nbsp;    public static final String VALIDATE_PWD = &quot;Validating the password to ensure the required conditions are met&quot;;
+<i class="no-highlight">18</i>&nbsp;    public static final String VALIDATE_PARAMS = &quot;Validating the fields to ensure they are not empty.&quot;;
+<i class="no-highlight">19</i>&nbsp;    public static final String SEPARATOR = &quot;--------------------------------------------------------------------------&quot;;
+<i class="no-highlight">20</i>&nbsp;    public static final String BAD_REQUEST_LOG = NOT_ELIGIBLE_TO_REGISTER + BLANK_PARAMS + INVALID_PASSWORD;
+<i class="no-highlight">21</i>&nbsp;    public static final String DATA_NOT_FOUND = &quot;No Data Found from API&quot;;
+<i class="no-highlight">22</i>&nbsp;    public static final String COUNTRY = &quot;Canada&quot;;
+<i class="no-highlight">23</i>&nbsp;    public static final String ERROR_TEXT = &quot;Encountered an exception while processing: {}&quot;;
+<i class="no-highlight">24</i>&nbsp;}
+</div>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+        var codeBlock = document.getElementById('sourceCode');
+
+        if (codeBlock) {
+            hljs.highlightBlock(codeBlock);
+        }
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-03-17 23:13</div>
+</div>
+</body>
+</html>

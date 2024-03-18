@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user-validation-service
+
+  output:
+    ansi:
+      enabled: always
+
+server:
+  port: 8095
+  servlet:
+    context-path: "/user-validation"
+
+ip:
+  api-url: "http://ip-api.com"
+
+springdoc:
+  api-docs:
+    path: "/docs"
