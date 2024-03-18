@@ -1,7 +1,7 @@
 # user-validation-service
 
-This service verifies user input against several conditions. If the input meets these conditions, 
-it returns a welcome message along with the user's city. Otherwise, it sends the corresponding error message.
+This service validates input parameters such as username, password, and IP address through various checks.
+It returns with a welcome message along with the user's city based on the provided IP address using an external API URL.
 
 ## API Documentation
 

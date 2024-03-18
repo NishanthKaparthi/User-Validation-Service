@@ -1,6 +1,5 @@
 package com.ibm.user_validation_service.config;
 
-import com.ibm.user_validation_service.model.UserResponse;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -12,11 +11,6 @@ import org.springframework.web.client.RestTemplate;
 public class ApiConfigProperties {
     @Value("${ip.api-url}")
     private String ipApiUrl;
-
-//    @Bean
-//    public UserResponse userResponseBean() {
-//        return new UserResponse();
-//    }
 
     @Bean
     public RestTemplate restTemplateBean() {

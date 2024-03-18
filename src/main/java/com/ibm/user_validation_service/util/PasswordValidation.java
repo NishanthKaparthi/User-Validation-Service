@@ -15,7 +15,6 @@ import java.util.regex.Pattern;
 public class PasswordValidation {
 
     public static boolean validatePassword(String password) {
-//        log.info(ValidationConstants.VALIDATE_PWD);
         return password.length() > 8 &&
                 containsNumber(password) &&
                 containsCapitalLetter(password) &&

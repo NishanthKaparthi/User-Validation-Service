@@ -11,11 +11,7 @@ public class ValidationConstants {
     public static final String BLANK_PARAMS = "Parameters should not be blank/null, please input username, password and IP address";
     public static final String INCOMING_REQUEST = "Incoming user request: {}";
     public static final String OUTGOING_RESPONSE = "Outgoing user response: {}";
-    public static final String NON_BLANK_PARAMS = "All the parameters are non null/non-blank";
-    public static final String VALID_PASSWORD = "Input password meets the standard";
     public static final String MAKE_API_CALL = "Making api call using URL: {}";
-    public static final String VALIDATE_PWD = "Validating the password to ensure the required conditions are met";
-    public static final String VALIDATE_PARAMS = "Validating the fields to ensure they are not empty.";
     public static final String SEPARATOR = "--------------------------------------------------------------------------";
     public static final String BAD_REQUEST_LOG = NOT_ELIGIBLE_TO_REGISTER + BLANK_PARAMS + INVALID_PASSWORD;
     public static final String DATA_NOT_FOUND = "No Data Found from API";

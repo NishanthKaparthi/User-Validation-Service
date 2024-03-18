@@ -33,9 +33,6 @@ public class UserService {
     @Autowired
     private ApiConfigProperties apiConfigProperties;
 
-//    @Autowired
-//    private UserResponse userResponse;
-
     @Autowired
     private RestTemplate restTemplate;
 
@@ -43,9 +40,7 @@ public class UserService {
         UserWrapperResponse userWrapperResponse;
         try {
             if (areDetailsPresent(userValidateDto)) {
-//                log.info(ValidationConstants.NON_BLANK_PARAMS);
                 if (PasswordValidation.validatePassword(userValidateDto.getPassword())) {
-//                    log.info(ValidationConstants.VALID_PASSWORD);
                     ApiResponse apiResponse = makeApiCall(userValidateDto);
                     Objects.requireNonNull(apiResponse, ValidationConstants.NULL_API_RESPONSE);
                     log.info("API Response: {}", apiResponse);
@@ -104,7 +99,6 @@ public class UserService {
     }
 
     private boolean areDetailsPresent(UserValidateDto userValidateDto) {
-//        log.info(ValidationConstants.VALIDATE_PARAMS);
         return !isBlank(userValidateDto.getUsername()) && !isBlank(userValidateDto.getPassword()) &&
                 !isBlank(userValidateDto.getIpAddress());
     }
